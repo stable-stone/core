@@ -1,3 +1,11 @@
+/**
+ * 多重继承
+ * 将 参数传过来的类, mixins 装饰类
+ *
+ * @export
+ * @param {(any | any[])} classes 支持类数组
+ * @returns {ClassDecorator}
+ */
 export function DClassInherit(classes: any | any[]): ClassDecorator {
     if (!Array.isArray(classes)) classes = [classes];
 
