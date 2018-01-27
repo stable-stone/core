@@ -1,4 +1,6 @@
 import { Array } from './array';
+import { Is } from './is';
+
 import * as _ from 'lodash';
 import { DClassInherit } from '../decorator';
 
@@ -8,8 +10,8 @@ import { DClassInherit } from '../decorator';
  * @class Function
  * @implements {Array}
  */
-@DClassInherit(Array)
-class Function implements Array {
+@DClassInherit([Array, Is])
+class Function implements Array, Is {
 
     /**
      * 返回数组中最后一个元素
@@ -17,6 +19,14 @@ class Function implements Array {
      * @memberof Function
      */
     tail: <T>(source: _.List<T> | null | undefined) => T;
+
+    /**
+     * 判断是否为小数
+     * 如果是, 返回 true, 反之 false
+     *
+     * @memberof Function
+     */
+    isFloat: (value: number) => boolean;
 
 }
 

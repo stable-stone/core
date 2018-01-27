@@ -1,7 +1,7 @@
 import { IAdapter } from '../interface';
 import * as path from 'path';
 import * as fs from 'fs';
-import * as _ from 'lodash';
+import { _ } from '../../function';
 
 export class FsAdapter implements IAdapter {
 
