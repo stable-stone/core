@@ -11,7 +11,7 @@ import { DClassInherit } from '../decorator';
  * @implements {Array}
  */
 @DClassInherit([Array, Is])
-class Function implements Array, Is {
+export class Function implements Array, Is {
 
     /**
      * 返回数组中最后一个元素

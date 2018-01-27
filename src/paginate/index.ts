@@ -3,7 +3,7 @@ import { IPaginateFormat } from './interface';
 
 type Object = { [key: string]: any };
 
-class Paginate {
+export class Paginate {
 
     /**
      * 输出的接口格式
@@ -84,4 +84,4 @@ class Paginate {
 }
 
 const core = new Paginate();
-export { core as Paginate };
+export { core as PaginateStatic };

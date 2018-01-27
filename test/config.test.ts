@@ -1,5 +1,5 @@
 import test from 'ava';
-import { Config } from '../src/config';
+import { ConfigStatic as Config } from '../src/config';
 
 for (const engine of ['config', 'fs']) {
 

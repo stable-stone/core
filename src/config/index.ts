@@ -3,7 +3,7 @@ import { IAdapter } from './interface';
 import { ConfigAdapter } from './adapters/config.adapter';
 import { FsAdapter } from './adapters/fs.adapter';
 
-class Config implements IAdapter {
+export class Config implements IAdapter {
 
     private adapter: IAdapter;
 
@@ -32,4 +32,4 @@ class Config implements IAdapter {
 }
 
 const core = new Config();
-export { core as Config };
+export { core as ConfigStatic };

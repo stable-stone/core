@@ -1,5 +1,5 @@
 import test from 'ava';
-import { Paginate } from '../src/paginate';
+import { PaginateStatic as Paginate } from '../src/paginate';
 
 test('测试 / default render', (t) => {
     const response = Paginate.render([[1, 2, 3, 4, 5], 16], 5, 1, 'http://www.baidu.com');
